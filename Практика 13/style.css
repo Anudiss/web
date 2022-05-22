@@ -8,75 +8,6 @@ p, a, button, span, div {
     user-select: none;
 }
 
-.callback-bt {
-    background:#38a3fd;
-    border:2px solid #38a3fd;
-    border-radius:50%;
-    box-shadow:0 8px 10px rgba(56,163,253,0.3);
-    cursor:pointer;
-    height:68px;
-    text-align:center;
-    width:68px;
-    position: fixed;
-    right: 8%;
-    bottom: 18%;
-    z-index:999;
-    transition:.3s;
-}
-
-.callback-bt .text-call{
-    height:68px;
-    width:68px;        
-    border-radius:50%;
-    position:relative;
-    overflow:hidden;
-}
-
-.callback-bt .text-call span {
-    text-align: center;
-    color:#38a3fd;
-    opacity: 0;
-    font-size: 0;
-    position:absolute;
-    right: 4px;
-    top: 22px;
-    line-height: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    transition: opacity .3s linear;
-    font-family: 'montserrat', Arial, Helvetica, sans-serif;
-}
-
-.callback-bt .text-call:hover span {
-    opacity: 1;
-    font-size: 11px;
-}
-
-.callback-bt:hover i {
-    display:none;
-}
-
-.callback-bt:hover {
-    z-index:1;
-    background:#fff;
-    color:transparent;
-    transition:.3s;
-}
-
-.callback-bt:hover i {
-    color:#38a3fd;
-    font-size:40px;
-    transition:.3s;
-}
-
-.callback-bt i {
-    color:#fff;
-    font-size:34px;
-    transition:.3s;
-    line-height: 66px;
-    transition: .5s ease-in-out;
-}
-
 .content
 {
     margin: 0 auto;
@@ -518,7 +449,7 @@ form input[type="submit"]
     height: 100%;
     bottom: -30px;
     transition: bottom .3s,
-		background .3s;
+		        background .3s;
     font-size: 1.5em;
     font-weight: 700;
     cursor: pointer;
@@ -608,6 +539,101 @@ form input[type="submit"]
     font-size: 1.5em;
     text-align: justify;
     background-color: lightblue;
+    box-shadow: 10px 10px 0 0 rgba(0, 0, 0, .5);
+}
+
+.comments
+{
+    width: 1230px;
+    margin: 50px auto;
+}
+
+.inner_comments
+{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 600px;
+    padding: 0 50px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.comment_block
+{
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    min-width: 300px;
+    padding: 20px;
+    background-color: #efefef;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-bottom: 70px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
+    transition: box-shadow .2s linear;
+}
+
+.comment_block:hover
+{
+    box-shadow: 0 10px 20px 0 rgba(58, 51, 95, 0.8);
+}
+
+.comment_header
+{
+    position: relative;
+    width: 100%;
+}
+
+.comment_info
+{
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+
+.comment_info .name
+{
+    font-weight: 600;
+}
+
+.comment_info .date
+{
+    color: rgba(0, 0, 0, .8);
+}
+
+.problem::before
+{
+    content: 'Тема';
+    display: block;
+    font-weight: 700;
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.comment::before
+{
+    content: 'Коммент';
+    display: block;
+    font-weight: 700;
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.comment
+{
+    font-size: 1.1em;
+    text-align: justify; 
+}
+
+.problem
+{
+    font-size: 1.1em;
+    text-align: justify;
 }
 
 footer 
