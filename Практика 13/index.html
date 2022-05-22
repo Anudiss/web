@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<title>XMod</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+	<div class="content">
+	    <header>
+		<div class="top">
+		    <div class="title">
+			<a href="index.html">
+			    <img src="image/logo.png" alt="">
+			</a>
+		    </div>
+		    <div class="container">
+			<div class="search">
+			    <input type="search" placeholder="Поиск по сайту">
+			    <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+			</div>
+		    </div>
+		    <div class="buttons">
+			<div class="contacts">
+			    <div class="contact">
+				<div class="text">
+				    <span>8 (3822) 94-06-06</span>
+				</div>
+				<i class="fa fa-phone-square fa-2x fa-fw fa-fh" aria-hidden="true"></i>
+			    </div>
+			    <div class="contact">
+				<div class="text">
+				    <span>service@2droida.ru</span>
+				</div>
+				<i class="fa fa-envelope fa-2x fa-fw fa-fh" aria-hidden="true"></i>
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<nav>
+		    <div class="inner_nav">
+			<a class="nav_item" href="#">О нас</a>
+			<a class="nav_item" href="#">Цены</a>
+			<a class="nav_item" href="#">Контакты</a>
+			<a class="nav_item" href="vakansia.html">Вакансии</a>
+			<a class="nav_item" href="otz.html">Отзывы</a>
+		    </div>
+		</nav>
+	    </header>
+
+	    <div id="slider">
+		<a href="#display" class="popup_link">
+		    <div class="slider_card">
+			<img class="imgphone" src="image/display.png">
+			<p class="card_title">Замена дисплея</p>
+			<div class="more"><p>Подробнее</p></div>
+		    </div>
+		</a>
+		<a href="#battery" class="popup_link">
+		    <div class="slider_card">
+			<img class="imgphone" src="image/battery.png">
+			<p class="card_title">Замена аккумулятора</p>
+			<div class="more"><p>Подробнее</p></div>
+		    </div>
+		</a>
+		<a href="#OS" class="popup_link">
+		    <div class="slider_card">
+			<img class="imgphone" src="image/OS.png">
+			<p class="card_title">Обновление ПО</p>
+			<div class="more"><p>Подробнее</p></div>
+		    </div>
+		</a>
+		<a href="#cleaning" class="popup_link">
+		    <div class="slider_card">
+			<img class="imgphone" src="image/Cleaning.png">
+			<p class="card_title">Чистка</p>
+			<div class="more"><p>Подробнее</p></div>
+		    </div>
+		</a>
+	    </div>
+	    <div class="advantage">
+		<div class="advantage_block">
+		    <span class="advantage_title">Минимальные сроки ремонта</span>
+		    <img class="advantage_img" src="image/clock.png" alt="">
+		    <div class="advantage_text">Благодаря большому опыту инженеров и наличию запасных частей на складе мы выполним ремонт быстро, качественно и недорого. До 80% заказов специалисты выполняют в день обращения.</div>
+		</div>
+	    </div>
+	</div>
+	<div type="button" class="callback-bt">
+		<div class="text-call">
+			<i class="fa fa-phone"></i>
+			<span>Заказать<br>звонок</span>
+		</div>
+	</div>
+	<div id="display" class="popup">
+	    <div class="popup_area"></div>
+	    <div class="popup_body">
+	        <div class="popup_content">
+		    <div class="popup_close"><i class="fa fa-times fa-lg" aria-hidden="true"></i></div>
+		    <div class="info">
+			<div class="popup_title">Замена дисплея</div>
+			<div class="popup_text">
+			    Разбит дисплей, не работает сенсор, не показывает экран
+			</div>
+			<div class="popup_price">от <span>1 000₽</span></div>
+		    </div>
+		    <div class="form">
+
+			<form action="">
+			    <span class="title">Оставьте заявку, мы Вам позвоним</span>
+			    <input type="text" name="name" placeholder="Имя" required autocomplete="off" pattern="[A-Za-zА-Яа-я]{2,}">
+			    <input type="text" name="surname" placeholder="Фамилия" required autocomplete="off" pattern="[A-Za-zА-Яа-я]{2,}">
+			    <input type="text" name="phone" placeholder="Номер телефона" required autocomplete="off" pattern="^(\+7|8)(\s*(\d)){10}">
+			    <input type="submit" value="Оставить заявку">
+			</form>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div id="battery" class="popup">
+	    <div class="popup_area"></div>
+	    <div class="popup_body">
+	        <div class="popup_content">
+		    <div class="popup_close"><i class="fa fa-times fa-lg" aria-hidden="true"></i></div>
+		    <div class="info">
+			<div class="popup_title">Замена аккумулятора</div>
+			<div class="popup_text">
+			    Не держит заряд, выключается на холоде или вздулся аккумулятор. А так же, если попала 
+			    влага или был сильный удар.
+			</div>
+			<div class="popup_price">от <span>1 000₽</span></div>
+		    </div>
+		    <div class="form">
+
+			<form action="">
+			    <span class="title">Оставьте заявку, мы Вам позвоним</span>
+			    <input type="text" name="name" placeholder="Имя" required autocomplete="off" pattern="[A-Za-zА-Яа-я]{2,}">
+			    <input type="text" name="surname" placeholder="Фамилия" required autocomplete="off" pattern="[A-Za-zА-Яа-я]{2,}">
+			    <input type="text" name="phone" placeholder="Номер телефона" required autocomplete="off" pattern="^(\+7|8)(\s*(\d)){10}">
+			    <input type="submit" value="Оставить заявку">
+			</form>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div id="OS" class="popup">
+	    <div class="popup_area"></div>
+	    <div class="popup_body">
+	        <div class="popup_content">
+		    <div class="popup_close"><i class="fa fa-times fa-lg" aria-hidden="true"></i></div>
+		    <div class="info">
+			<div class="popup_title">Обновление программного обеспечения</div>
+			<div class="popup_text">
+			    Ошибки приложений Android, не работает Google Play, не открывается галерея, Не видит 
+			    сеть, нет русского языка.
+			</div>
+			<div class="popup_price">от <span>300₽</span></div>
+		    </div>
+		    <div class="form">
+
+			<form action="">
+			    <span class="title">Оставьте заявку, мы Вам позвоним</span>
+			    <input type="text" name="name" placeholder="Имя" required autocomplete="off" pattern="[A-Za-zА-Яа-я]{2,}">
+			    <input type="text" name="surname" placeholder="Фамилия" required autocomplete="off" pattern="[A-Za-zА-Яа-я]{2,}">
+			    <input type="text" name="phone" placeholder="Номер телефона" required autocomplete="off" pattern="^(\+7|8)(\s*(\d)){10}">
+			    <input type="submit" value="Оставить заявку">
+			</form>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div id="cleaning" class="popup">
+	    <div class="popup_area"></div>
+	    <div class="popup_body">
+	        <div class="popup_content">
+		    <div class="popup_close"><i class="fa fa-times fa-lg" aria-hidden="true"></i></div>
+		    <div class="info">
+			<div class="popup_title">Чистка от коррозии после попадания жидкости</div>
+			<div class="popup_text">
+			    Залит телефон, внутри влага, утопили.
+			</div>
+			<div class="popup_price">от <span>1 000₽</span></div>
+		    </div>
+		    <div class="form">
+			<form action="">
+			    <span class="title">Оставьте заявку, мы Вам позвоним</span>
+			    <input type="text" name="name" placeholder="Имя" required autocomplete="off" pattern="[A-Za-zА-Яа-я]{2,}">
+			    <input type="text" name="surname" placeholder="Фамилия" required autocomplete="off" pattern="[A-Za-zА-Яа-я]{2,}">
+			    <input type="text" name="phone" placeholder="Номер телефона" required autocomplete="off" pattern="^(\+7|8)(\s*(\d)){10}">
+			    <input type="submit" value="Оставить заявку">
+			</form>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
