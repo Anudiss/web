@@ -565,7 +565,7 @@ form input[type="submit"]
     display: block;
     width: 100%;
     position: relative;
-    background-color: lightblue;
+    margin-top: 200px;
 }
 
 .advantage_block
@@ -579,7 +579,7 @@ form input[type="submit"]
     letter-spacing: 4px;
     font-weight: 700;
     font-size: 4em;
-    text-align: right;
+    text-align: center;
     margin-right: 30px;
 }
 
@@ -594,12 +594,12 @@ form input[type="submit"]
     display: inline-block;
     position: relative;
     width: 40%;
-    height: 500px;
     margin-top: 2em;
     margin-left: 50px;
     line-height: 1.5em;
     font-size: 1.5em;
     text-align: justify;
+    background-color: lightblue;
 }
 
 .Rectangle
