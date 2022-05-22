@@ -571,6 +571,7 @@ form input[type="submit"]
 .advantage_block
 {
     display: block;
+    margin-top: 50px;
 }
 
 .advantage_title
@@ -594,6 +595,8 @@ form input[type="submit"]
     display: inline-block;
     position: relative;
     width: 40%;
+    border-radius: 20px;
+    padding: 20px 40px;
     margin-top: 2em;
     margin-left: 50px;
     line-height: 1.5em;
