@@ -605,9 +605,7 @@ form input[type="submit"]
     background-color: lightblue;
 }
 
-.Rectangle
+.key
 {
-    position: relative;
-    width: 300px;
-    height: 400px;
+font-size:large
 }
