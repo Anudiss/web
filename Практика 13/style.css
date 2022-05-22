@@ -1,3 +1,8 @@
+body
+{
+    margin-bottom: 0;
+}
+
 p, a, button, span, div {
     font-family: 'Ubuntu', sans-serif;
     user-select: none;
@@ -609,18 +614,23 @@ footer
 {
     width: 1230px;
     margin: 0 auto;
+    background-color: #03071e;
+    color: #eee;
+    margin-top: 50px;
 }
 
 .service_info 
 {
-    width: 65%;
+    width: 70%;
+    margin: 0 auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 .info_block 
 {
-    width: 40%;
+    width: 50%;
 }
 
 .info_block .title
@@ -629,9 +639,29 @@ footer
     margin-bottom: 20px;
 }
 
-.info_block .text
+.info_block .info_content
 {
-    display: inline-block;
-    height: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
+.info_content .fa
+{
+    width: 64px;
+    height: 64px;
+    text-align: center;
+}
+
+.info_content .text
+{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    font-size: 1.2em;
+    margin-left: 20px;
+    user-select: text;
+}
