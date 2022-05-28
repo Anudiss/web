@@ -72,8 +72,32 @@ p, a, button, span, div {
 {
     display: inline-block;
     position: relative;
+    width: 32px;
+    height: 32px;
     right: 0;
     color: #d64045;
+}
+
+.contact .fa-whatsapp
+{
+    border-radius: 10px;
+    color: white;
+    background-color: limegreen;
+}
+
+.contact .fa-vk
+{
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+}
+
+.contact .fa-instagram
+{
+    border-radius: 10px;
+    color: white;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 
 .contact:hover
@@ -81,12 +105,12 @@ p, a, button, span, div {
     width: 100%;
 }
 
-.contact:hover .text span
+.contact:hover .text a
 {
     right: 0;
 }
 
-.contact .text span
+.contact .text a
 {
     position: relative;
     display: block;
@@ -99,11 +123,6 @@ p, a, button, span, div {
     padding: 0 5px;
     transition: right .3s;
     user-select: text;
-}
-
-.buttons
-{
-    width: auto;
 }
 
 .top
@@ -171,17 +190,31 @@ nav
 .inner_nav
 {
     padding: 0 20px;
-    background: #1e0d75;
+    background: lightblue;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    color: #FFFFFF;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
+
+.inner_nav .nav_item
+{
+    color: gray;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 0 30px;
+}
+
+.inner_nav .nav_item:hover
+{
+    background-color: rgba(0, 0, 0, .2);
+    color: lightblue;
 }
 
 .popup_link
@@ -460,19 +493,6 @@ form input[type="submit"]
     padding-top: 10%;
 }
 
-
-.inner_nav .nav_item
-{
-    color: #FFFFFF;
-    text-decoration: none;
-    line-height: 70px;
-}
-
-.inner_nav .nav_item:hover
-{
-    text-decoration: underline;
-}
-
 #slider
 {
     width: 1230px;
@@ -548,6 +568,12 @@ form input[type="submit"]
     margin: 50px auto;
 }
 
+.comments h1
+{
+    font-weight: 700;
+    font-size: 3em;
+}
+
 .inner_comments
 {
     position: relative;
@@ -556,7 +582,33 @@ form input[type="submit"]
     height: 600px;
     padding: 0 50px;
     overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar{
+    height: 8px;
+    width: 4px;
+    background: gray;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+    background: #000;
+    border-radius: 10px;
 }
 
 .comment_block
@@ -569,7 +621,7 @@ form input[type="submit"]
     padding: 20px;
     background-color: #efefef;
     border-radius: 20px;
-    margin-left: 100px;
+    margin-left: 20px;
     margin-bottom: 70px;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
     transition: box-shadow .2s linear;
