@@ -1,0 +1,105 @@
+body
+{
+    margin: 0;
+    font-family: 'Ubuntu', 'sans-serif';
+    background-image: repeating-linear-gradient(45deg, rgba(22, 23, 166, 0.52) 0, rgba(22, 23, 166, 0.52) 30px, transparent 0, transparent 50%);
+    background-size: 100px 100px;
+    background-color: rgba(255, 87, 133, 0.78);
+}
+
+.content
+{
+    max-width: 1440px;
+    margin: 0 30px;
+}
+
+header
+{
+    height: 8vh;
+}
+
+header .search-box
+{
+    margin-top: 10px;
+    float: right;
+    position: relative;
+    border-radius: 10xp;
+    width: 60%;
+}
+
+.search-input
+{
+    position: relative;
+    font-size: 1.5em;
+    padding: 0;
+    width: 100%;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, .5);
+}
+
+.fa-search
+{
+    position: absolute;
+    display: block;
+    background-color: gray;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100%;
+    right: 0;
+}
+
+.cards
+{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card
+{
+    width: 300px;
+    margin-top: 10px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    transition: box-shadow .2s linear;
+    background-color: white;
+}
+
+.card:hover
+{
+    box-shadow: 0 10px 40px 0 rgba(128, 0, 255, .7);
+}
+
+.card-image
+{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.card-image img
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+}
+
+.card-title
+{
+    font-weight: bolder;
+    font-size: 1.7em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-price
+{
+    font-weight: bolder;
+    font-size: 1.6em;
+    text-align: center;
+}
+

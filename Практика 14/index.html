@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,22 +12,30 @@
     <title>Market</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="">
-            </a>
-        </div>
-        <nav>
-            <div class="menu_button"></div>
-            <div class="inner_nav">
-                <div class="nav-item"><i class="fa fa-caret-right" aria-hidden="true"></i> Автомобили</div>
-                <div class="nav-item"><i class="fa fa-caret-right" aria-hidden="true"></i> Информация</div>
-                <div class="nav-item"><i class="fa fa-caret-right" aria-hidden="true"></i> Контакты</div>
-                <div class="nav-item"><i class="fa fa-caret-right" aria-hidden="true"></i> Поддержка</div>
+    <div class="content">
+        <header>
+            <div class="search-box">
+                <input type="text" class="search-input">
+                <div class="icon">
+                    <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                </div>
             </div>
-        </nav>
-    </header>
-    <script src="scripts/script.js"></script>
+            <div class="ordering"></div>
+        </header>
+        <div class="cards">
+            <div class="card">
+                <div class="card-image"><img src="images/bmw-reviews-and-rating-motor-trend-1.png" alt=""></div>
+                <div class="card-price">2 000 000</div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="images/bmw-reviews-new-used-models-motor-trend-3.png" alt=""></div>
+                <div class="card-price">20 000 000</div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="images/bmw-flat-png-transparent-bmw-flat-images-pluspng-12.png" alt=""></div>
+                <div class="card-price">2 500 000</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
