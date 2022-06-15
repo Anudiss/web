@@ -109,6 +109,7 @@ header
 {
     max-width: 1440px;
     margin: 0 auto;
+    user-select: none;
 }
 
 .slider__item.shown
@@ -281,6 +282,7 @@ header
     height: 250px;
     border-radius: 50%;
     background-color: var(--lightblue);
+    user-select: none;
 }
 
 .advantage__item .icon img
@@ -332,6 +334,7 @@ header
     grid-template-areas:
         ". ."
         ". .";
+    
 }
 
 .order__item .icon
@@ -399,7 +402,7 @@ header
     display: flex;
     overflow-y: auto;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start space-around;
 }
 
 .inner__reviews::-webkit-scrollbar
@@ -411,15 +414,11 @@ header
 {
     min-width: 30%;
     min-height: 50%;
-    margin: 0 20%;
     border-radius: 30px;
+    margin: 0 10%;
     background-color: var(--white);
     position: relative;
-}
-
-.review:nth-child(1)
-{
-    margin-left: 0;
+    display: block;
 }
 
 .review .inner__review
@@ -449,20 +448,51 @@ header
 .reviews__controls
 {
     position: relative;
+    display: block;
     top: 50%;
-    left: 0;
     transform: translateY(-50%);
 }
 
-.reviews__controls .left::after
+.reviews .arrow
 {
-    content: '';
     display: block;
     position: absolute;
-    width: 50px;
-    height: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--gray);
+    background-color: var(--white);
+    transition: background-color .1s, color .1s;
+    z-index: 999;
+}
+
+.reviews .arrow:hover
+{
+    color: var(--white);
     background-color: var(--gray);
-    transform: rotate(45deg);
+}
+
+.reviews .arrow .fa
+{
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reviews .arrow.left
+{
+    left: 20px;
+}
+
+.reviews .arrow.right
+{
+    right: 20px;
 }
 
 /* Reviews */
