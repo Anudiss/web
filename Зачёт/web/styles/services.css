@@ -1,0 +1,113 @@
+@import url('../styles/colors.css');
+@import url(header.css);
+@import url(footer.css);
+
+.services
+{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.services h1.title
+{
+    font-size: 48px;
+}
+
+.service
+{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 120px 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        ". . . .";
+    position: relative;
+    margin: 30px 0;
+    width: 90%;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 50vh;
+    background-color: var(--white);
+    box-shadow: 0px 5px 4px 1px rgba(0, 0, 0, .2);
+}
+
+.service .icon
+{
+    left: 0;
+    top: 0;
+    height: 120px;
+    width: 120px;
+    border-radius: 50vh;
+    background-color: var(--lightblue);
+}
+
+.service .icon img
+{
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    transition: transform .1s ease-in-out;
+}
+
+.service .name
+{
+    line-height: 120px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service .time
+{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 120px;
+}
+
+.service .time::before
+{
+    content: 'Срок: ';
+    color: var(--lightblue);
+}
+
+.service .price
+{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 120px;
+}
+
+.service .price::before
+{
+    content: 'Цена: ';
+    color: var(--lightblue);
+}
+
+.service .order
+{
+    padding: 10px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    height: 36%;
+    margin-right: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50vh;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--lightblue);
+    color: var(--white);
+    transition: box-shadow .2s ease-in-out;
+}
+
+.service .order:hover
+{
+    box-shadow: 0px 2px 4px 2px var(--lightblue);
+}
+
+.service:hover .icon img
+{
+    transform: scale(1.3);
+}
