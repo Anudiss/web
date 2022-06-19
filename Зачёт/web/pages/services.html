@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../scripts/services.js"></script>
+    <script type="text/javascript" src="../scripts/popup.js"></script>
     <title>Услуги</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
                         <ul>
                             <li class="nav__item"><a href="../pages/index.html">О нас</a></li>
                             <li class="nav__item"><a href="../pages/services.html">Услуги</a></li>
-                            <li class="nav__item"><a href="">Заказать работу</a></li>
+                            <li class="nav__item"><a href="" id="order_work">Заказать работу</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -79,14 +80,14 @@
                             <div class="column">
                                 <h1 class="title">Контактные данные</h1>
                                 <div class="input__container">
-                                    <input type="name" class="input" id="name" placeholder=" ">
-                                    <div class="cut"></div>
-                                    <label for="name" class="placeholder">Имя</label>
-                                </div>
-                                <div class="input__container">
-                                    <input type="surmane" class="input" id="surname" placeholder=" ">
+                                    <input type="surmane" class="input" id="surname" placeholder=" " required>
                                     <div class="cut"></div>
                                     <label for="surname" class="placeholder">Фамилия</label>
+                                </div>
+                                <div class="input__container">
+                                    <input type="name" class="input" id="name" placeholder=" " required>
+                                    <div class="cut"></div>
+                                    <label for="name" class="placeholder">Имя</label>
                                 </div>
                                 <div class="input__container">
                                     <input type="patronymic" class="input" id="patronymic" placeholder=" ">
@@ -94,12 +95,12 @@
                                     <label for="patronymic" class="placeholder">Отчество</label>
                                 </div>
                                 <div class="input__container">
-                                    <input type="phone" class="input" id="phone_number" placeholder=" ">
+                                    <input type="tel" class="input" id="phone_number" placeholder=" " pattern="^(\+\s*\d|\d)\s*(\d\s*){10}" required>
                                     <div class="cut"></div>
                                     <label for="phone_number" class="placeholder">Номер телефона</label>
                                 </div>
                                 <div class="input__container">
-                                    <input type="mail" class="input" id="email" placeholder=" ">
+                                    <input type="email" class="input" id="email" placeholder=" " required>
                                     <div class="cut"></div>
                                     <label for="email" class="placeholder">Почта</label>
                                 </div>
@@ -107,12 +108,12 @@
                             <div class="column">
                                 <h1 class="title">Данные о работе</h1>
                                 <div class="input__container">
-                                    <input type="text" placeholder=" " class="input" id="theme">
+                                    <input type="text" placeholder=" " class="input" id="theme" required>
                                     <div class="cut"></div>
                                     <label for="theme" class="placeholder">Тема</label>
                                 </div>
                                 <div class="input__container dropdown__container">
-                                    <input type="text" placeholder=" " class="input dropdown" id="work_type" readonly>
+                                    <input type="text" placeholder=" " class="input dropdown" id="work_type" readonly required>
                                     <div class="icon"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
                                     <div class="options">
                                         <div class="option">Дипломная работа</div>
@@ -125,9 +126,14 @@
                                     <label for="work_type" class="placeholder">Тип работы</label>
                                 </div>
                                 <div class="input__container">
-                                    <input type="text" placeholder=" " class="input" id="date">
+                                    <input type="date" placeholder=" " class="input" id="date" required>
                                     <div class="cut"></div>
                                     <label for="date" class="placeholder">Срок выполенния</label>
+                                </div>
+                                <div class="input__container">
+                                    <textarea placeholder=" " class="input" id="description" cols="40" rows="4"></textarea>
+                                    <div class="cut"></div>
+                                    <label for="description" class="placeholder">Описание</label>
                                 </div>
                             </div>
                         </div>
