@@ -230,7 +230,7 @@ input[type="date"]::-webkit-calendar-picker-indicator
     display: block;
     position: absolute;
     right: 10px;
-    background-image: url('../images/Дата.png');
+    background-image: url('../../images/Дата.png');
     width: 30px;
     height: 30px;
     border-width: thin;

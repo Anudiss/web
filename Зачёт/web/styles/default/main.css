@@ -1,10 +1,9 @@
-@import url(colors.css);
-@import url(header.css);
-@import url(footer.css);
-@import url(popup.css);
+@import url('../colors.css');
+@import url('../default/header.css');
+@import url('../default/footer.css');
+@import url('../default/popup.css');
 
 /* SLIDER */
-
 .slider
 {
     max-width: 1440px;
@@ -74,53 +73,6 @@
     background-color: var(--white);
     color: var(--darkblue);
     font-weight: 600;
-}
-
-.slider__control
-{
-    display: inline-block;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-}
-
-.slider__control ul
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 192px;
-    height: 40px;
-}
-
-.slider__control ul .control__item
-{
-    position: relative;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background-color: var(--lightgray);
-    cursor: pointer;
-}
-
-.slider__control ul .control__item.selected
-{
-    background-color: var(--darkgray);
-}
-
-.slider__control ul .control__item:hover
-{
-    background-color: var(--darkgray);
-}
-
-.slider__control ul
-{
-    list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0;
 }
 
 .image__block
@@ -194,6 +146,8 @@
 .advantage__item .icon img
 {
     position: relative;
+    width: 70%;
+    height: 70%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -261,6 +215,8 @@
     position: relative;
     top: 50%;
     left: 50%;
+    width: 60%;
+    height: 60%;
     transform: translate(-50%, -50%);
 }
 
@@ -432,3 +388,153 @@
 }
 
 /* Reviews */
+
+@media (max-width: 1024px) {
+    .info__block h1.title
+    {
+        font-size: 50px;
+    }
+
+    .info__block a.show__more
+    {
+        font-size: 30px;
+        padding: 10px 15px;
+    }
+
+    .advantages h1.title
+    {
+        font-size: 40px;
+        padding: 40px 0;
+    }
+
+    .advantage__item
+    {
+        margin-top: 65px;
+    }
+
+    .advantage__item .icon
+    {
+        width: 150px;
+        height: 150px;
+    }
+
+    .advantage__item .text
+    {
+        font-size: 36px;
+    }
+
+    .howtoorder h1.title
+    {
+        font-size: 40px;
+        padding: 40px 0;
+    }
+
+    .howtoorder .inner__order
+    {
+        margin-top: 50px;
+    }
+
+    .order__item .icon
+    {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+    }
+
+    .order__item .title
+    {
+        font-size: 32px;
+    }
+
+    .order__item .text
+    {
+        font-size: 23px;
+    }
+
+    .reviews h1.title
+    {
+        font-size: 40px;
+        padding: 40px 0;
+    }
+
+    .reviews__container .review
+    {
+        min-width: 36%;
+        margin: 0 7%;
+    }
+}
+
+@media (max-width: 768px) {
+    .info__block h1.title
+    {
+        font-size: 36px;
+    }
+
+    .info__block a.show__more
+    {
+        font-size: 24px;
+        padding: 7px 8px;
+    }
+
+    .advantages h1.title
+    {
+        font-size: 30px;
+        padding: 30px 0;
+    }
+
+    .advantage__item
+    {
+        margin-top: 50px;
+    }
+
+    .advantage__item .icon
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .advantage__item .text
+    {
+        font-size: 28px;
+    }
+
+    .howtoorder h1.title
+    {
+        font-size: 30px;
+        padding: 30px 0;
+    }
+
+    .howtoorder .inner__order
+    {
+        margin-top: 40px;
+    }
+
+    .order__item .icon
+    {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 20px;
+    }
+
+    .order__item .title
+    {
+        font-size: 24px;
+    }
+
+    .order__item .text
+    {
+        font-size: 18px;
+    }
+
+    .reviews h1.title
+    {
+        font-size: 30px;
+        padding: 30px 0;
+    }
+
+    .reviews__container .review
+    {
+        min-width: 50%;
+        margin: 0 25%;
+    }
+}

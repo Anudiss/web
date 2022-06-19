@@ -44,7 +44,7 @@ $(document).ready(function () {
     const review = $('.review');
     
     var scrollValue = reviews__container.width();
-    var maxScroll = reviews__container.width() * ((review.length + review.length % 2) / 2) - reviews__container.width();
+    var maxScroll = reviews__container.width() * ((review.length + review.length % 2) / ($(document).width() > 768 ? 2 : 1)) - reviews__container.width();
     const scrollTime = 300;
     var scroll = 0;
 
