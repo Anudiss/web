@@ -68,6 +68,74 @@
             </div>
         </footer>
         <div class="scrollUp"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+        <div class="popup">
+            <div class="empty_area"></div>
+            <div class="popup__body">
+                <div class="title">Заказать работу</div>
+                <div class="close__button"><i class="fa fa-times" aria-hidden="true"></i></div>
+                <div class="popup__form">
+                    <form action="" class="data">
+                        <div class="columns">
+                            <div class="column">
+                                <h1 class="title">Контактные данные</h1>
+                                <div class="input__container">
+                                    <input type="name" class="input" id="name" placeholder=" ">
+                                    <div class="cut"></div>
+                                    <label for="name" class="placeholder">Имя</label>
+                                </div>
+                                <div class="input__container">
+                                    <input type="surmane" class="input" id="surname" placeholder=" ">
+                                    <div class="cut"></div>
+                                    <label for="surname" class="placeholder">Фамилия</label>
+                                </div>
+                                <div class="input__container">
+                                    <input type="patronymic" class="input" id="patronymic" placeholder=" ">
+                                    <div class="cut"></div>
+                                    <label for="patronymic" class="placeholder">Отчество</label>
+                                </div>
+                                <div class="input__container">
+                                    <input type="phone" class="input" id="phone_number" placeholder=" ">
+                                    <div class="cut"></div>
+                                    <label for="phone_number" class="placeholder">Номер телефона</label>
+                                </div>
+                                <div class="input__container">
+                                    <input type="mail" class="input" id="email" placeholder=" ">
+                                    <div class="cut"></div>
+                                    <label for="email" class="placeholder">Почта</label>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h1 class="title">Данные о работе</h1>
+                                <div class="input__container">
+                                    <input type="text" placeholder=" " class="input" id="theme">
+                                    <div class="cut"></div>
+                                    <label for="theme" class="placeholder">Тема</label>
+                                </div>
+                                <div class="input__container dropdown__container">
+                                    <input type="text" placeholder=" " class="input dropdown" id="work_type" readonly>
+                                    <div class="icon"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
+                                    <div class="options">
+                                        <div class="option">Дипломная работа</div>
+                                        <div class="option">Курсовая работа</div>
+                                        <div class="option">Реферат</div>
+                                        <div class="option">Презентация</div>
+                                        <div class="option">Антиплагиат</div>
+                                    </div>
+                                    <div class="cut"></div>
+                                    <label for="work_type" class="placeholder">Тип работы</label>
+                                </div>
+                                <div class="input__container">
+                                    <input type="text" placeholder=" " class="input" id="date">
+                                    <div class="cut"></div>
+                                    <label for="date" class="placeholder">Срок выполенния</label>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" class="submit__button" value="Оставить заявку">
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
